@@ -1,2 +1,0 @@
-Fix on/off switch sometimes not working
-Open app when tapping notification

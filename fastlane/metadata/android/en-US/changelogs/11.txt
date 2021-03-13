@@ -1,2 +1,0 @@
-Add partial French translation (thanks, Larnicone!)
-Add option to decline incoming calls

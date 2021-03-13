@@ -1,1 +1,0 @@
-Don't start listener if no features are enabled

@@ -1,1 +1,0 @@
-Don't make answer all angles editable if answering isn't enabled (more logical UI)

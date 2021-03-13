@@ -1,2 +1,0 @@
-Greatly improve compatibility with many different proximity sensors
-Add an option to vibrate on incoming calls

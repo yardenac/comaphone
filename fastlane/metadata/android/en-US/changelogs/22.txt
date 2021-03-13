@@ -1,1 +1,0 @@
-Ignore incoming calls when already in a call

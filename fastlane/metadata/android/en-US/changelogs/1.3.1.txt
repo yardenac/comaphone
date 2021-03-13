@@ -1,1 +1,0 @@
-Stop listening to sensors at any non-ringing state
