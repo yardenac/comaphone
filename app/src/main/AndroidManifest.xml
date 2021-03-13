@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.hackerchick.raisetoanswer">
+    package="me.yardenac.comaphone">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
@@ -25,12 +25,12 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".RaiseToAnswerCallReceiver" >
+        <receiver android:name=".ComaPhoneCallReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
 
-        <service android:enabled="true" android:name=".RaiseToAnswerSensorEventListener" />
+        <service android:enabled="true" android:name=".ComaPhoneSensorEventListener" />
     </application>
 </manifest>

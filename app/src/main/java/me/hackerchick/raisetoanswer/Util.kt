@@ -1,4 +1,4 @@
-package me.hackerchick.raisetoanswer
+package me.yardenac.comaphone
 
 import android.content.Context
 import android.content.Intent
@@ -41,7 +41,7 @@ class Util {
 
         fun setAnswerFeatureEnabled(context: Context, enabled: Boolean) {
             with (getAnswerFeatureSharedPreference(context).edit()) {
-                putInt(context.getString(me.hackerchick.raisetoanswer.R.string.raise_enabled_key), if (enabled) 1 else 0)
+                putInt(context.getString(me.yardenac.comaphone.R.string.raise_enabled_key), if (enabled) 1 else 0)
                 commit()
             }
         }
@@ -56,7 +56,7 @@ class Util {
 
         fun setAnswerAllAnglesFeatureEnabled(context: Context, enabled: Boolean) {
             with (getAnswerAllAnglesFeatureSharedPreference(context).edit()) {
-                putInt(context.getString(me.hackerchick.raisetoanswer.R.string.answer_all_angles_enabled_key), if (enabled) 1 else 0)
+                putInt(context.getString(me.yardenac.comaphone.R.string.answer_all_angles_enabled_key), if (enabled) 1 else 0)
                 commit()
             }
         }
@@ -71,7 +71,7 @@ class Util {
 
         fun setDeclineFeatureEnabled(context: Context, enabled: Boolean) {
             with (getDeclineFeatureSharedPreference(context).edit()) {
-                putInt(context.getString(me.hackerchick.raisetoanswer.R.string.flip_over_enabled_key), if (enabled) 1 else 0)
+                putInt(context.getString(me.yardenac.comaphone.R.string.flip_over_enabled_key), if (enabled) 1 else 0)
                 commit()
             }
         }
@@ -86,7 +86,7 @@ class Util {
 
         fun setBeepBehaviourEnabled(context: Context, enabled: Boolean) {
             with (getBeepBehaviourSharedPreference(context).edit()) {
-                putInt(context.getString(me.hackerchick.raisetoanswer.R.string.beep_behaviour_enabled_key), if (enabled) 1 else 0)
+                putInt(context.getString(me.yardenac.comaphone.R.string.beep_behaviour_enabled_key), if (enabled) 1 else 0)
                 commit()
             }
         }
@@ -101,7 +101,7 @@ class Util {
 
         fun setVibrateBehaviourEnabled(context: Context, enabled: Boolean) {
             with (getVibrateBehaviourSharedPreference(context).edit()) {
-                putInt(context.getString(me.hackerchick.raisetoanswer.R.string.vibrate_behaviour_enabled_key), if (enabled) 1 else 0)
+                putInt(context.getString(me.yardenac.comaphone.R.string.vibrate_behaviour_enabled_key), if (enabled) 1 else 0)
                 commit()
             }
         }
@@ -145,7 +145,7 @@ class Util {
             }
 
             // Prepare the intent for the sensor event listener
-            serviceIntent = Intent(context, RaiseToAnswerSensorEventListener::class.java)
+            serviceIntent = Intent(context, ComaPhoneSensorEventListener::class.java)
             serviceIntent!!.putExtra("testMode", testMode)
 
             // Set the features and behaviours

@@ -1,4 +1,4 @@
-package me.hackerchick.raisetoanswer
+package me.yardenac.comaphone
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
@@ -8,7 +8,7 @@ import android.media.AudioManager
 import android.telephony.TelephonyManager
 
 
-class RaiseToAnswerCallReceiver : BroadcastReceiver() {
+class ComaPhoneCallReceiver : BroadcastReceiver() {
     @SuppressLint("MissingPermission", "NewApi")
     override fun onReceive(context: Context, intent: Intent?) {
         val state = intent!!.getStringExtra(TelephonyManager.EXTRA_STATE)

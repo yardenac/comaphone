@@ -1,4 +1,4 @@
-package me.hackerchick.raisetoanswer
+package me.yardenac.comaphone
 
 import android.Manifest
 import android.content.*
@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
             val clipboard: ClipboardManager =
                 getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             val clip = ClipData.newPlainText(
-                "RaiseToAnswer Debug Log", Util.getLog().value!!.joinToString(
+                "ComaPhone Debug Log", Util.getLog().value!!.joinToString(
                     separator = "\n"
                 )
             )
@@ -180,7 +180,7 @@ class MainActivity : AppCompatActivity() {
                 val browserIntent =
                     Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse("https://thelastproject.github.io/RaiseToAnswer/PRIVACY_POLICY")
+                        Uri.parse("https://github.com/yardenac/comaphone/PRIVACY_POLICY.md")
                     )
                 startActivity(browserIntent)
                 true
@@ -224,9 +224,9 @@ class MainActivity : AppCompatActivity() {
                 intent.data = Uri.parse("mailto:")
                 intent.putExtra(
                     Intent.EXTRA_EMAIL,
-                    "raisetoanswer.steeplelike@hackerchick.me"
+                    "yardenack@gmail.com"
                 )
-                intent.putExtra(Intent.EXTRA_SUBJECT, "Raise To Answer Debug Log")
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Coma Phone Debug Log")
                 intent.putExtra(Intent.EXTRA_TEXT, emailDataBuilder.toString())
                 if (intent.resolveActivity(packageManager) != null) {
                     startActivity(intent)

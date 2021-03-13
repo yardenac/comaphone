@@ -1,4 +1,4 @@
-package me.hackerchick.raisetoanswer
+package me.yardenac.comaphone
 
 import android.annotation.SuppressLint
 import android.app.*
@@ -19,7 +19,7 @@ import kotlin.math.roundToInt
 import kotlin.math.sqrt
 
 
-class RaiseToAnswerSensorEventListener : Service(), SensorEventListener {
+class ComaPhoneSensorEventListener : Service(), SensorEventListener {
     private var testMode = false
 
     private var featureAnswerEnabled = false
@@ -93,7 +93,7 @@ class RaiseToAnswerSensorEventListener : Service(), SensorEventListener {
 
         val notification: Notification = Notification.Builder(this, "incoming_call")
             .setSmallIcon(R.mipmap.ic_launcher)
-            .setContentText(getText(R.string.raise_to_answer_is_listening_to_sensor_data))
+            .setContentText(getText(R.string.coma_phone_is_listening_to_sensor_data))
             .setContentIntent(pendingIntent)
             .build()
 
@@ -276,7 +276,7 @@ class RaiseToAnswerSensorEventListener : Service(), SensorEventListener {
             handler.post(Runnable {
                 Toast.makeText(
                     applicationContext,
-                    getString(R.string.detected_raise_to_answer),
+                    getString(R.string.detected_coma_phone),
                     Toast.LENGTH_SHORT
                 ).show()
             })

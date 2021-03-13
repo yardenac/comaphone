@@ -16,12 +16,12 @@
         android:paddingTop="10dp" >
 
         <TextView
-            android:id="@+id/raise_to_answer_header"
+            android:id="@+id/coma_phone_header"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/raise_to_answer_header" />
+            android:text="@string/coma_phone_header" />
 
         <TextView
             android:id="@+id/missing_support_magnetometer"
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:checkMark="@drawable/checkbox"
                 android:gravity="center_vertical"
-                android:text="@string/feature_raise_to_answer"
+                android:text="@string/feature_coma_phone"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:minHeight="48dp"/>
