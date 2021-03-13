@@ -1,1 +1,0 @@
-Er is een bug welke de app kon laten crashen opgelost
